@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/kevin"
+        app:civ_border_color="@color/teal_700"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="StudyCharm"
+        android:textSize="30sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="20dp"
+       android:orientation="horizontal"
+       android:gravity="center">
+       <ImageView
+           android:id="@+id/picUser"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/account"/>
+       <EditText
+           android:id="@+id/username"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:inputType="text"
+           android:hint="Enter your username here"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/picPass"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/lock"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="match_parent"
+            android:hint="Enter your password here"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
